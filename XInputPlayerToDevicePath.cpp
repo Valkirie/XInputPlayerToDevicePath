@@ -14,7 +14,7 @@
 //
 // Detours
 // 
-#include <detours/detours.h>
+#include <detours.h>
 
 //
 // STL
@@ -157,7 +157,7 @@ static void RunLookupForUserIndex()
 	DetourTransactionCommit();
 }
 
-int main()
+int main(int argc, char* argv[])
 {
 	RunLookupForUserIndex();
 
